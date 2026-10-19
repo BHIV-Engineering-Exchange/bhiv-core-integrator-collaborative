@@ -7,7 +7,7 @@
 ## Branches
 
 - Current branch: `main`
-- No branch-specific work is documented in this handover.
+- No branch-specific work is documented in this handover
 
 ## Environments
 
