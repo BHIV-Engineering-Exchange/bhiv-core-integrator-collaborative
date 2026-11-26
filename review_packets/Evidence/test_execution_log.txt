@@ -1,0 +1,35 @@
+============================= test session starts =============================
+platform win32 -- Python 3.11.9, pytest-9.2.0, pluggy-1.7.0 -- C:\Pratik_Bhuwad\CMO_Agent\.venv\Scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Pratik_Bhuwad\CMO_Agent
+plugins: anyio-4.16.0, cov-7.1.0
+collecting ... collected 20 items
+
+tests/test_determinism_50_runs.py::TestFiftyRunDeterminism::test_fifty_consecutive_runs_produce_identical_hash PASSED [  5%]
+tests/test_integration_block.py::TestIntegrationBlock::test_full_governed_lifecycle_e2e PASSED [ 10%]
+tests/test_negative_error_boundaries.py::TestNegativeAndErrorBoundaries::test_malformed_payload_sanitized_to_422_contract PASSED [ 15%]
+tests/test_negative_error_boundaries.py::TestNegativeAndErrorBoundaries::test_missing_workflow_audit_sanitized_to_404 PASSED [ 20%]
+tests/test_negative_error_boundaries.py::TestNegativeAndErrorBoundaries::test_duplicate_approval_rejection PASSED [ 25%]
+tests/test_negative_error_boundaries.py::TestNegativeAndErrorBoundaries::test_prohibited_channel_abstention PASSED [ 30%]
+tests/test_negative_error_boundaries.py::TestNegativeAndErrorBoundaries::test_error_boundary_catches_arbitrary_exception PASSED [ 35%]
+tests/test_negative_error_boundaries.py::TestNegativeAndErrorBoundaries::test_api_route_functions_execution PASSED [ 40%]
+tests/test_regression.py::TestRegressionAndSystemIntegrity::test_schema_version_consistency PASSED [ 45%]
+tests/test_regression.py::TestRegressionAndSystemIntegrity::test_genesis_block_integrity PASSED [ 50%]
+tests/test_regression.py::TestRegressionAndSystemIntegrity::test_bucket_persistence_directory_exists PASSED [ 55%]
+tests/test_regression.py::TestRegressionAndSystemIntegrity::test_dependency_pinning_in_requirements PASSED [ 60%]
+tests/test_unit_core.py::TestSchemaConstraints::test_schema_extra_fields_forbidden PASSED [ 65%]
+tests/test_unit_core.py::TestSchemaConstraints::test_task_assignment_request_validation PASSED [ 70%]
+tests/test_unit_core.py::TestDeterminismUtility::test_volatile_fields_stripped PASSED [ 75%]
+tests/test_unit_core.py::TestDeterminismUtility::test_canonical_json_key_sorting PASSED [ 80%]
+tests/test_unit_core.py::TestStateMachineInvariants::test_valid_progression PASSED [ 85%]
+tests/test_unit_core.py::TestStateMachineInvariants::test_prohibited_state_jump PASSED [ 90%]
+tests/test_unit_core.py::TestStateMachineInvariants::test_terminal_state_mutation_prohibited PASSED [ 95%]
+tests/test_unit_core.py::TestStateMachineInvariants::test_invalid_reviewer_identity_rejected PASSED [100%]
+
+============================= 20 passed in 1.02s ==============================
+Suite Pass Rate: 100.0% (20/20)
+Unhandled Exceptions: 0
+Unhandled 500 Responses: 0
+Regressions Detected: 0
+50-Run Determinism State Hash: 740c79a801044acd223bdf3c0e5fe868870d2911fc41623e94edbe4c176d2dd7
+Verification Engine: Parikshak / SETU OS Architecture v6.0

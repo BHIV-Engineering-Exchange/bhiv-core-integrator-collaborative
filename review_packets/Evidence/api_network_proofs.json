@@ -1,0 +1,158 @@
+{
+  "task_id": "T-OUT-OF-SYLLABUS",
+  "verified_at": "2026-11-26T16:22:00Z",
+  "schema_version": "1.0.0",
+  "samples": [
+    {
+      "stage": "1_INTAKE",
+      "endpoint": "POST /v1/core/review/submit",
+      "request": {
+        "request_id": "REQ-MKT-2026-LI-01",
+        "task_id": "T-OUT-OF-SYLLABUS",
+        "actor_id": "pratik.bhuwad",
+        "role": "Product Owner",
+        "intent": "COMMERCIAL_CAMPAIGN_PROPOSAL",
+        "payload": {
+          "campaign_name": "Q4 Enterprise System Scale-Up",
+          "budget": 20000.0,
+          "channel": "linkedin"
+        }
+      },
+      "response": {
+        "status": "SUCCESS",
+        "request_id": "REQ-MKT-2026-LI-01",
+        "task_id": "T-OUT-OF-SYLLABUS",
+        "state": "INTAKE",
+        "trace_id": "TRC-20261126-740C79A8",
+        "result": {
+          "message": "Intake successfully registered and state initialized in INTAKE mode."
+        },
+        "evidence_receipt": {
+          "status": "STORED",
+          "artifact_id": "INTAKE-REQ-MKT-2026-LI-01",
+          "artifact_type": "instruction",
+          "trace_id": "TRC-20261126-740C79A8",
+          "stored_path": "data/bucket_records/instruction_INTAKE-REQ-MKT-2026-LI-01.json",
+          "sha256_digest": "3ec176495bcf5fa3085ea4fdfbb4141684c7fa43f7a6375058728d61394cba5d",
+          "schema_version": "1.0.0"
+        },
+        "schema_version": "1.0.0"
+      }
+    },
+    {
+      "stage": "2_GC_SHAKTI_EVALUATION",
+      "endpoint": "POST /v1/core/review/evaluate?request_id=REQ-MKT-2026-LI-01",
+      "response": {
+        "status": "SUCCESS",
+        "request_id": "REQ-MKT-2026-LI-01",
+        "task_id": "T-OUT-OF-SYLLABUS",
+        "state": "AWAITING_REVIEW",
+        "trace_id": "TRC-EVAL-REQ-MKT-2026-LI-01",
+        "result": {
+          "compliance": {
+            "policy_id": "POL-ENTERPRISE-001",
+            "status": "CONDITIONAL",
+            "compliance_score": 75.0,
+            "violations": [
+              "Requested spend of $20,000.00 for 'linkedin' exceeds specific channel cap of $15,000.00 by $5,000.00."
+            ],
+            "citations": [
+              "DOC-MKT-002:Sec-2-Channel-Caps"
+            ],
+            "condition_notes": "Approval conditional upon managerial exception sign-off for channel variance of $5,000.00.",
+            "evaluated_by": "GC_SHAKTI_V6",
+            "schema_version": "1.0.0"
+          },
+          "governance_status": "AWAITING_HUMAN_APPROVAL"
+        },
+        "evidence_receipt": {
+          "status": "STORED",
+          "artifact_id": "EVAL-REQ-MKT-2026-LI-01",
+          "artifact_type": "contract",
+          "trace_id": "TRC-EVAL-REQ-MKT-2026-LI-01",
+          "stored_path": "data/bucket_records/contract_EVAL-REQ-MKT-2026-LI-01.json",
+          "sha256_digest": "43924f3c7d6ab623dbdfa27928cb0f15c159849b291d92d47aa79dcbba86b46b",
+          "schema_version": "1.0.0"
+        },
+        "schema_version": "1.0.0"
+      }
+    },
+    {
+      "stage": "3_GOVERNED_APPROVAL",
+      "endpoint": "POST /v1/core/review/approve",
+      "request": {
+        "request_id": "REQ-MKT-2026-LI-01",
+        "reviewer_name": "Pratik Bhuwad - Product Owner",
+        "decision_notes": "Approved with managerial variance exception for Q4 enterprise scale-up."
+      },
+      "response": {
+        "status": "SUCCESS",
+        "request_id": "REQ-MKT-2026-LI-01",
+        "task_id": "T-OUT-OF-SYLLABUS",
+        "state": "GOVERNED_APPROVAL",
+        "trace_id": "TRC-APP-REQ-MKT-2026-LI-01",
+        "result": {
+          "message": "Proposal approved by Pratik Bhuwad - Product Owner.",
+          "state_hash": "2ffea7db40e72251ee2bc3a1c8c9fae88d070bdf059c2b4ffca612e4f0dc3eb9",
+          "block_index": 1
+        },
+        "ledger_entry": {
+          "block_index": 1,
+          "transaction_id": "TX-REQ-MKT-2026-LI-01-APP",
+          "trace_id": "TRC-APP-REQ-MKT-2026-LI-01",
+          "task_id": "T-OUT-OF-SYLLABUS",
+          "state_hash": "2ffea7db40e72251ee2bc3a1c8c9fae88d070bdf059c2b4ffca612e4f0dc3eb9",
+          "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+          "timestamp": "2026-11-26T16:22:00.123456Z",
+          "recorded_by": "GOV_OS_CORE_V6",
+          "status": "COMMITTED",
+          "schema_version": "1.0.0"
+        },
+        "schema_version": "1.0.0"
+      }
+    },
+    {
+      "stage": "4_NIYANTRAN_DISPATCH",
+      "endpoint": "POST /v1/core/assignment/dispatch",
+      "request": {
+        "request_id": "REQ-MKT-2026-LI-01",
+        "target_agent": "Pratik Bhuwad",
+        "title": "Execute SETU OS Architecture v6.0 Verification",
+        "calibrated_duration_mins": 180
+      },
+      "response": {
+        "status": "SUCCESS",
+        "request_id": "REQ-MKT-2026-LI-01",
+        "task_id": "T-OUT-OF-SYLLABUS",
+        "state": "COMMITTED",
+        "trace_id": "TRC-DISP-REQ-MKT-2026-LI-01",
+        "result": {
+          "assignment": {
+            "assignment_id": "ASN-T-OUT-OF-SYLLABUS-NTR",
+            "task_id": "T-OUT-OF-SYLLABUS",
+            "target_agent": "Pratik Bhuwad",
+            "status": "ASSIGNED",
+            "dispatched_at": "2026-11-26T16:22:00.234567Z",
+            "trace_id": "TRC-DISP-REQ-MKT-2026-LI-01",
+            "schema_version": "1.0.0"
+          },
+          "final_state_hash": "740c79a801044acd223bdf3c0e5fe868870d2911fc41623e94edbe4c176d2dd7",
+          "is_committed": true
+        },
+        "ledger_entry": {
+          "block_index": 2,
+          "transaction_id": "TX-REQ-MKT-2026-LI-01-COMMITTED",
+          "trace_id": "TRC-DISP-REQ-MKT-2026-LI-01",
+          "task_id": "T-OUT-OF-SYLLABUS",
+          "state_hash": "740c79a801044acd223bdf3c0e5fe868870d2911fc41623e94edbe4c176d2dd7",
+          "previous_hash": "2ffea7db40e72251ee2bc3a1c8c9fae88d070bdf059c2b4ffca612e4f0dc3eb9",
+          "timestamp": "2026-11-26T16:22:00.345678Z",
+          "recorded_by": "GOV_OS_CORE_V6",
+          "status": "COMMITTED",
+          "schema_version": "1.0.0"
+        },
+        "schema_version": "1.0.0"
+      }
+    }
+  ]
+}

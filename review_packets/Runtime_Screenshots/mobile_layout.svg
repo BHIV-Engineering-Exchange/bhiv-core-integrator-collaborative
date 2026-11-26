@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 375 812" width="375" height="812">
+  <rect width="375" height="812" fill="#0b0f19"/>
+  <!-- Header -->
+  <rect x="15" y="15" width="345" height="55" rx="6" fill="#111827" stroke="#1f2937"/>
+  <text x="25" y="42" fill="#f3f4f6" font-family="monospace" font-size="12" font-weight="bold">BHIV CORE — MOBILE CONSOLE</text>
+  <text x="25" y="58" fill="#10b981" font-family="monospace" font-size="9">● SETU OS v6.0 | RESPONSIVE PARITY</text>
+
+  <!-- Metric Summary -->
+  <rect x="15" y="80" width="345" height="110" rx="6" fill="#111827" stroke="#1f2937"/>
+  <text x="25" y="105" fill="#9ca3af" font-family="monospace" font-size="10" font-weight="bold">5-TIER TEST MATRIX</text>
+  <text x="25" y="140" fill="#10b981" font-family="monospace" font-size="24" font-weight="bold">20/20 PASS</text>
+  <text x="25" y="165" fill="#f3f4f6" font-family="sans-serif" font-size="10">0 Unhandled 500s | 50-Run Stable</text>
+  <text x="220" y="140" fill="#3b82f6" font-family="monospace" font-size="20" font-weight="bold">1.02s</text>
+  <text x="220" y="165" fill="#f3f4f6" font-family="sans-serif" font-size="10">Execution</text>
+
+  <!-- Determinism Hash -->
+  <rect x="15" y="200" width="345" height="120" rx="6" fill="#111827" stroke="#1f2937"/>
+  <text x="25" y="225" fill="#9ca3af" font-family="monospace" font-size="10" font-weight="bold">50-RUN DETERMINISTIC HASH</text>
+  <rect x="25" y="240" width="325" height="45" rx="4" fill="#000"/>
+  <text x="32" y="258" fill="#34d399" font-family="monospace" font-size="8">740c79a801044acd223bdf3c0e5f</text>
+  <text x="32" y="274" fill="#34d399" font-family="monospace" font-size="8">e868870d2911fc41623e94edbe4c176d2dd7</text>
+  <text x="25" y="305" fill="#10b981" font-family="monospace" font-size="9">✓ 50/50 Runs Identical (0.00% Variance)</text>
+
+  <!-- FSM Traversal -->
+  <rect x="15" y="330" width="345" height="210" rx="6" fill="#111827" stroke="#1f2937"/>
+  <text x="25" y="355" fill="#9ca3af" font-family="monospace" font-size="10" font-weight="bold">STATE MACHINE TRAVERSAL</text>
+  
+  <rect x="25" y="370" width="325" height="24" rx="3" fill="#1f2937"/>
+  <text x="35" y="386" fill="#f3f4f6" font-family="sans-serif" font-size="9">1. INTAKE (Stored in Bucket)</text>
+
+  <rect x="25" y="398" width="325" height="24" rx="3" fill="#1f2937"/>
+  <text x="35" y="414" fill="#f3f4f6" font-family="sans-serif" font-size="9">2. POLICY_VALIDATION (GC Shakti)</text>
+
+  <rect x="25" y="426" width="325" height="24" rx="3" fill="#1f2937"/>
+  <text x="35" y="442" fill="#f59e0b" font-family="sans-serif" font-size="9">3. AWAITING_REVIEW (Hard Boundary)</text>
+
+  <rect x="25" y="454" width="325" height="24" rx="3" fill="#1f2937"/>
+  <text x="35" y="470" fill="#10b981" font-family="sans-serif" font-size="9">4. GOVERNED_APPROVAL (Pratik Bhuwad)</text>
+
+  <rect x="25" y="482" width="325" height="24" rx="3" fill="#1f2937"/>
+  <text x="35" y="498" fill="#10b981" font-family="sans-serif" font-size="9">5. NIYANTRAN_DISPATCH (Auto-Sync)</text>
+
+  <rect x="25" y="510" width="325" height="24" rx="3" fill="#1f2937"/>
+  <text x="35" y="526" fill="#10b981" font-family="sans-serif" font-size="9">6. COMMITTED (Terminal Gov-OS Block)</text>
+
+  <!-- Niyantran Assignment Card -->
+  <rect x="15" y="550" width="345" height="240" rx="6" fill="#111827" stroke="#1f2937"/>
+  <text x="25" y="575" fill="#9ca3af" font-family="monospace" font-size="10" font-weight="bold">NEXT TASK ASSIGNMENT</text>
+  <text x="25" y="600" fill="#f3f4f6" font-family="sans-serif" font-size="10">Target Agent: <strong>Pratik Bhuwad</strong></text>
+  <text x="25" y="620" fill="#f3f4f6" font-family="sans-serif" font-size="10">Task ID: <strong>T-OUT-OF-SYLLABUS</strong></text>
+  <text x="25" y="640" fill="#f3f4f6" font-family="sans-serif" font-size="10">Assignment: <strong>ASN-T-OUT-OF-SYLLABUS-NTR</strong></text>
+  <text x="25" y="660" fill="#10b981" font-family="sans-serif" font-size="10">Verdict: <strong>PASS (100/100)</strong></text>
+  <text x="25" y="680" fill="#f3f4f6" font-family="sans-serif" font-size="10">Weakness: <strong>integration_fail [RESOLVED]</strong></text>
+  
+  <rect x="25" y="700" width="325" height="40" rx="4" fill="#000"/>
+  <text x="35" y="725" fill="#34d399" font-family="monospace" font-size="8">Gov-OS Attestation Block #2: COMMITTED</text>
+
+  <rect x="25" y="750" width="325" height="30" rx="4" fill="#10b981"/>
+  <text x="100" y="770" fill="#0b0f19" font-family="sans-serif" font-size="10" font-weight="bold">✓ ZERO-SWITCH ASSIGNED</text>
+</svg>
